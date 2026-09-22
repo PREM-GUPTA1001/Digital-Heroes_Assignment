@@ -1,47 +1,77 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Digital Heroes 🏌️‍♀️
 
-## Getting Started
+A subscription-driven web platform combining golf performance tracking, charity fundraising, and a monthly draw-based reward engine — built for the Digital Heroes trainee selection process (PRD Level 1).
 
-First, run the development server:
+**Live App:** [digital-heroes-5kvz.vercel.app](https://digital-heroes-5kvz.vercel.app/)
+
+---
+
+## ✨ What it does
+
+- Users subscribe (monthly/yearly) via Stripe
+- Enter their last 5 golf scores (Stableford format, 1–45)
+- Choose a charity to support with a portion of their subscription
+- Participate in monthly draw-based prize pools (3/4/5-number match tiers)
+- Track winnings, participation, and payout status from a personal dashboard
+- Admins manage users, draws, charities, and winner verification from a dedicated admin panel
+
+## 📸 Screenshots
+
+### User Dashboard
+![Dashboard](./Screenshot%202026-09-22%20162156.png)
+
+### Admin Panel
+![Admin Panel](./Screenshot%202026-09-22%20162246.png)
+
+### Login
+![Login](./Screenshot%202026-09-22%20162411.png)
+
+### Signup
+![Signup](./Screenshot%202026-09-22%20162431.png)
+
+## 🧱 Tech Stack
+
+- **Framework:** Next.js (App Router, Turbopack)
+- **Database & Auth:** Supabase
+- **Payments:** Stripe
+- **Styling:** Tailwind CSS
+- **Hosting:** Vercel
+
+## 🗂️ Key Routes
+
+| Route | Description |
+|---|---|
+| `/login`, `/signup` | Auth flows |
+| `/dashboard` | Subscriber dashboard — scores, charity, participation, winnings |
+| `/subscribe` | Plan selection & Stripe checkout |
+| `/charities` | Charity directory |
+| `/admin` | Admin panel — draws & winners management |
+| `/admin/draws` | Configure, simulate, and publish monthly draws |
+| `/admin/winners` | Verify proof & mark payouts |
+
+## 🚀 Getting Started (local development)
+
+```bash
+git clone https://github.com/Sakshikumari1001/digital-heroes.git
+cd digital-heroes
+npm install
+```
+
+Create a `.env.local` file with your own Supabase & Stripe credentials, then:
 
 ```bash
 npm run dev
-
-# or
-
-yarn dev
-
-# or
-
-pnpm dev
-
-# or
-
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🧪 Testing
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Use Stripe test mode with card `4242 4242 4242 4242`, any future expiry, any CVC.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 📄 About
 
-## Learn More
+Built as a sample assignment for Digital Heroes' full-stack trainee selection process (PRD v1.0, March 2026).
 
-To learn more about Next.js, take a look at the following resources:
+## 👥 Authors
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
-
-## Contributions
-
-1.Sakshi Kumari -- Full_Stack_Developer
-2.Prem Kumar Gupta -- Full_Stack_Developer
+- Prem Kumar Gupta
+- Sakshi Kumari
