@@ -43,5 +43,5 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/bui
 
 ## Contributions
 
-1.Sakshi Kumari 
-2.Prem Kumar Gupta
+1.Sakshi Kumari -- Full_Stack_Developer
+2.Prem Kumar Gupta -- Full_Stack_Developer
