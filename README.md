@@ -73,5 +73,5 @@ Built as a sample assignment for Digital Heroes' full-stack trainee selection pr
 
 ## 👥 Authors
 
-- Prem Kumar Gupta
+- Prem Kumar Gupta - Full_Stack_Developer
 - Sakshi Kumari
